@@ -1,0 +1,274 @@
+/***** VARIABLES *****/
+$font-stack: "Nanum Gothic", sans-serif;
+$primary-color: #000;
+$secondary-color: #ff0099;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** GOOGLE FONTS TYPOGRAPHY *****/
+.nanum-gothic-extrabold {
+  font-family: $font-stack;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.nanum-gothic-bold {
+  font-family: $font-stack;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nanum-gothic-regular {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  font-family: $font-stack;
+  text-align: left;
+  line-height: 1.35;
+  background: $primary-color;
+  color: #fff;
+}
+
+@media (576px <= width <= 800px) { 
+  header {
+  text-align: center;
+  line-height: 1;
+  }
+}
+
+.panorama {
+  max-width: 100%;
+  height: max-content;
+}
+
+@media (576px <= width <= 800px) {
+  .panorama {
+    max-width: 100%;
+    height: 30px;
+  }
+}
+
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  @include neonText();
+}
+
+@media (576px <= width <= 800px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: right;
+  color: #fff;
+}
+
+@media (576px <= width <= 800px) {
+  h2 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+h3 {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+@media (576px <= width <= 800px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+h4 {
+  padding-bottom: 0.625rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: $secondary-color;
+}
+
+@media (576px <= width <= 800px) {
+  h4 {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: $primary-color;
+}
+
+@media (576px <= width <= 800px) {
+  p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
+
+.img_credit {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+@media (576px <= width <= 800px) {
+  .img_credit {
+    font-size: 0.5rem;
+  }
+}
+
+.introduction {
+  padding: 30px;
+
+  p {
+    padding: 20px 0 0 20px;
+  }
+}
+
+@media (576px <= width <= 800px) {
+  .introduction {
+    padding: 5px;
+    p {
+      padding: 10px 0 0 10px;
+    }
+  }
+}
+
+.quotes { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: calc(35vh - 10px);
+  vertical-align: auto;
+  margin-bottom: 80px;
+  background-color: $secondary-color;
+}
+
+@media (576px <= width <= 800px) {
+  .quotes { 
+  display: none;
+  }
+}
+
+.quotes__quote {
+  padding: 30px;
+  min-width: 25%;
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media (576px <= width <= 800px) {
+  .quotes__quote { 
+    display: none;
+    }
+}
+
+.quotes__quote 
+p {
+  color: #ffff00;
+}
+
+.quotes__quote-id {
+  padding-bottom: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1; 
+}
+
+.quotes__quote-job {
+  font-size: 0.6rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.sections { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding: 30px 100px 0 100px;
+}
+
+@media (576px <= width <= 800px) {
+  .sections { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 15px 10px 0 10px;
+  }
+}
+
+.sections__section { 
+  display: flex;
+  flex-direction: column;
+  background-color: #eaecee;
+}
+
+@media (576px <= width <= 800px) {
+  .sections__section { 
+    display: flex;
+    flex-direction: column;
+    background-color: #eaecee;
+  }
+}
+
+div.sections__section 
+time {
+  display: block;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  font-size: 0.8rem;
+}
+
+.sections__section h4, p {
+  padding: 0 1.2rem 0.5rem 1.2rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+@media (576px <= width <= 926px) {
+  .img-fluid {
+    max-width: 100%;
+    max-height: 50px;
+  }
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  text-align: left;
+  background-color: $primary-color;
+}
