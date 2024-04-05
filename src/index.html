@@ -20,6 +20,15 @@
       </div>
     </header>
 
+    <nav>
+      <ul>
+          <li><a href="#">Historia alternativa</a></li>
+          <li><a href="#">Otros museos</a></li>
+          <li><a href="#">Comunidades</a></li>
+          <li><a href="#">Foro</a></li>
+      </ul>
+    </nav>
+
     <div class="panorama">
       <img src="./assets/images/berlin_landscape.jpg" alt="Imagen panorámica de la ciudad de Berlín (Alemania)" width="2500" height="644" class="panorama" />
       <p class="img_credit">IMAGEN: © Steve Collis (CC BY 2.0 Deed)</p>
@@ -145,9 +154,34 @@
             <p class="img_credit">IMAGEN: © Gunnar Klack (CC BY-SA 4.0 Deed)</p>                   
           </div>
       </section>
+
+      <div class="form">
+        <form id="form" class="form">
+          <h3>¿Quieres más pistas secretas?</h3>
+            <div class="form-control">
+              <label for="username">Nombre</label>
+              <input type="text" id="username" placeholder="Introduce tu nombre de usuario" />
+              <small>Error message</small>
+            </div>
+            
+            <div class="form-control">
+              <label for="age">Edad</label>
+              <input type="number" id="age" placeholder="Introduce tu edad" />
+              <small>Error message</small>
+            </div> 
+            
+            <div class="form-control">
+              <label for="email">Correo electrónico</label>
+              <input type="text" id="email" placeholder="Introduce tu correo electrónico" />
+              <small>Error message</small>
+            </div> 
+
+            <button type="submit">Enviar</button>
+        </form>     
+     </div>
     </main>
 
     <include src="./views/footer.html"></include>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </body> 
 </html>
